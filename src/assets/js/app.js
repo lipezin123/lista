@@ -27,3 +27,15 @@ ul.onclick = event => {
     }
   }
 }
+
+const buttonOpen = document.querySelector(".button-modal")
+const buttonClose = document.querySelector(".button-modal-close")
+const modal = document.querySelector("dialog")
+
+buttonOpen.onclick = () => {
+  modal.showModal()
+}
+
+buttonClose.onclick = () => {
+  modal.close()
+}
