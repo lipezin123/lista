@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: #121214;
+}
+
+body * {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 100%;
+  color: #fff;
+}
+.container {
+  width: 75%;
+  max-width: 370px;
+  margin-inline: auto;
+}
+
+form {
+  background-color: #1e1e1e;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 8rem;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+form > div {
+  width: 100%;
+}
+
+form > div > label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+form input {
+  background-color: #181818;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.25;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  width: 100%;
+  display: block;
+}
+
+form button {
+  color: #fff;
+  background-color: #9333ff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+ul {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: 0.25rem;
+  list-style: none;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+ul li {
+  height: 40px;
+
+  border-style: none;
+  color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom-width: 1px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+}
+
+ul li button {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+  background: none;
+  cursor: pointer;
+}
+
+.button-modal {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #9333ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

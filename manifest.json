@@ -1,0 +1,23 @@
+{
+  "short_name": "Don't forget To-do",
+  "name": "DF To-do",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "theme-color": "#000000",
+  "background_color": "#121214",
+  "background-color": "#121214",
+  "description": "my site description",
+  "icons": [
+    {
+      "src": "src/assets/img/logo-100x100.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "src/assets/img/logo-500x500.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    }
+  ]
+}
