@@ -89,6 +89,11 @@ form button {
   cursor: pointer;
 }
 
+.icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
 ul {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
@@ -163,9 +168,9 @@ dialog div button {
   cursor: pointer;
 }
 
-dialog div button svg {
-  width: max-content;
-  height: max-content;
+dialog div button .icon {
+  font-size: 24px;
+  color: #a1a1aa;
 }
 
 dialog div p {
