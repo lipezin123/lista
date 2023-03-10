@@ -2,6 +2,7 @@
   "short_name": "Don't forget To-do",
   "name": "DF To-do",
   "start_url": ".",
+  "version": "0.1",
   "display": "standalone",
   "theme_color": "#000000",
   "theme-color": "#000000",
