@@ -149,7 +149,8 @@ dialog {
 dialog div {
   display: flex;
   align-items: center;
-  gap: 78px;
+  gap: 86px;
+  margin-bottom: 16px;
 }
 
 dialog div button {
@@ -158,6 +159,7 @@ dialog div button {
   justify-content: center;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 dialog div button svg {
@@ -172,6 +174,20 @@ dialog div p {
   color: #f4f4f5;
 }
 
+dialog textarea {
+  resize: none;
+  width: 100%;
+  border: 2px solid #52525b;
+  border-radius: 4px;
+  background: none;
+  outline: none;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+dialog textarea:focus {
+  border: 2px solid #9333ff;
+}
 dialog > button[disabled] {
   display: block;
   width: 100%;
