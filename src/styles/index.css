@@ -150,12 +150,12 @@ dialog {
   max-width: 375px;
   padding: 32px 24px 16px 24px;
   background-color: #121214;
+  border-radius: 0.25rem;
 }
 
 dialog div {
   display: flex;
   align-items: center;
-  gap: 86px;
   margin-bottom: 16px;
 }
 
@@ -178,6 +178,7 @@ dialog div p {
   font-size: 20px;
   line-height: 24px;
   color: #f4f4f5;
+  margin-inline: auto;
 }
 
 dialog textarea {
@@ -208,6 +209,7 @@ dialog > button[disabled] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .footer-modal a {
   font-weight: 500;
