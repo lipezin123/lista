@@ -26,10 +26,7 @@ body * {
 
 form {
   background-color: #1e1e1e;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 0.25rem;
   margin-top: 8rem;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -51,9 +48,6 @@ form > div > label {
   line-height: 1rem;
   margin-bottom: 0.5rem;
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -63,10 +57,7 @@ form > div > label {
 
 form input {
   background-color: #181818;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem 1rem;
   line-height: 1.25;
   border: 1px solid #e5e7eb;
   border-radius: 0.25rem;
@@ -77,8 +68,7 @@ form input {
 form button {
   color: #fff;
   background-color: #9333ff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-block: 0.5rem;
   border-radius: 0.25rem;
   display: flex;
   align-items: center;
@@ -108,13 +98,9 @@ ul {
 
 ul li {
   height: 40px;
-
   border-style: none;
   color: #fff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem 1rem;
   border-bottom-width: 1px;
   display: flex;
   justify-content: space-between;
