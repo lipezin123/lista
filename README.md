@@ -1,5 +1,7 @@
 ## Don't forget To-do PWA
 
+###  Projeto em desenvolvimento (bugs presentes)
+
 ![preview](./.github/preview1.png)
 ![preview](./.github/preview2.png)
 
