@@ -1,5 +1,10 @@
 const form = document.querySelector("#form")
 const ul = document.querySelector("ul")
+const buttonOpen = document.querySelector(".button-modal")
+const buttonClose = document.querySelector(".button-modal-close")
+const buttonSubmit = document.querySelector("#submit")
+const modal = document.querySelector("dialog")
+const textarea = document.querySelector("textarea")
 
 form.onsubmit = event => {
   event.preventDefault()
@@ -28,14 +33,22 @@ ul.onclick = event => {
   }
 }
 
-const buttonOpen = document.querySelector(".button-modal")
-const buttonClose = document.querySelector(".button-modal-close")
-const modal = document.querySelector("dialog")
-
 buttonOpen.onclick = () => {
   modal.showModal()
 }
 
 buttonClose.onclick = () => {
   modal.close()
+}
+
+function Submit() {
+  const condition = textarea.value.length > 10
+  const conditionAttribute = textarea.value.length <= 10
+
+  if (condition) {
+    return buttonSubmit.removeAttribute("disabled")
+  }
+  if (conditionAttribute) {
+    return buttonSubmit.setAttribute("disabled", true)
+  }
 }
