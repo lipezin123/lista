@@ -1,4 +1,4 @@
-const form = document.querySelector("form")
+const form = document.querySelector("#form")
 const ul = document.querySelector("ul")
 
 form.onsubmit = event => {

@@ -24,7 +24,7 @@ body * {
   margin-inline: auto;
 }
 
-form {
+#form {
   background-color: #1e1e1e;
   padding: 24px 16px;
   border-radius: 4px;
@@ -36,11 +36,11 @@ form {
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-form > div {
+#form > div {
   width: 100%;
 }
 
-form > div > label {
+#form > div > label {
   display: block;
   text-transform: uppercase;
   font-weight: 700;
@@ -55,7 +55,7 @@ form > div > label {
   border-width: 0;
 }
 
-form input {
+#form input {
   background-color: #181818;
   padding: 8px 16px;
   line-height: 1.25;
@@ -65,7 +65,7 @@ form input {
   display: block;
 }
 
-form button {
+#form button {
   color: #fff;
   background-color: #9333ff;
   padding-block: 8px;
@@ -167,7 +167,7 @@ dialog div p {
   margin-inline: auto;
 }
 
-dialog textarea {
+dialog form textarea {
   resize: none;
   width: 100%;
   border: 2px solid #52525b;
@@ -178,10 +178,10 @@ dialog textarea {
   margin-bottom: 8px;
 }
 
-dialog textarea:focus {
+dialog form textarea:focus {
   border: 2px solid #9333ff;
 }
-dialog > button[disabled] {
+dialog form > button[disabled] {
   display: block;
   width: 100%;
   background-color: #9333ff;
