@@ -191,10 +191,12 @@ dialog form > button {
 }
 dialog form > button {
   opacity: 1;
+  cursor: pointer;
 }
 
 dialog form > button[disabled] {
   opacity: 0.5;
+  cursor: not-allowed;
 }
 .footer-modal {
   display: flex;
