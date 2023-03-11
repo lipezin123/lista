@@ -3,7 +3,7 @@
 ![preview](./.github/preview1.png)
 ![preview](./.github/preview2.png)
 
-[🔗 Link do projeto](https://vespasianoo.github.io/to-do-app//)
+[🔗 Link do projeto](https://vespasianoo.github.io/to-do-app/)
 
 ### 🛠 Tecnologias
 
