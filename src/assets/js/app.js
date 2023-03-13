@@ -16,10 +16,16 @@ form.onsubmit = event => {
 
   const li = document.createElement("li")
   const span = document.createElement("span")
+  const button = document.createElement("button")
+
+  button.setAttribute("class", "delete")
+  button.textContent = "X"
 
   span.setAttribute("class", "item-list")
   span.textContent = value
+
   li.appendChild(span)
+  li.appendChild(button)
   ul.appendChild(li)
 
   const arr = new Array()
