@@ -14,9 +14,21 @@ form.onsubmit = event => {
 
   if (value === "") return
 
-  const li = ul.querySelector("li").cloneNode(true)
-  li.querySelector("span").textContent = value
+  const li = document.createElement("li")
+  const span = document.createElement("span")
+
+  span.setAttribute("class", "item-list")
+  span.textContent = value
+  li.appendChild(span)
   ul.appendChild(li)
+
+  const arr = new Array()
+
+  const ItemValue = document.querySelectorAll(".item-list").forEach(item => {
+    arr.push(item.textContent)
+  })
+
+  localStorage.setItem("item", JSON.stringify(arr))
 
   input.value = ""
 }
@@ -52,3 +64,17 @@ function Submit() {
     return buttonSubmit.setAttribute("disabled", true)
   }
 }
+
+function getList() {
+  const listString = localStorage.getItem("item")
+  if (listString) {
+    const listObj = JSON.parse(listString)
+    let listHTML = ""
+    for (var i = 0; i < listObj.length; i++) {
+      listHTML += `<li><span>${listObj[i]}</span><button class="delete">X</button></li>`
+    }
+    ul.innerHTML = listHTML
+  }
+}
+
+window.addEventListener("load", getList)
