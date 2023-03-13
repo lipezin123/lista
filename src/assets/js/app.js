@@ -35,8 +35,16 @@ form.onsubmit = event => {
 
 ul.onclick = event => {
   if (event.target.classList.contains("delete")) {
+    const itemIndex =
+      event.target.parentElement.querySelector("span").textContent
     if (confirm("Deseja deletar esse item?")) {
       event.target.parentElement.remove()
+      const listString = localStorage.getItem("item")
+      let listObj = JSON.parse(listString)
+      let index = listObj.indexOf(itemIndex)
+      listObj.splice(index, 1)
+      let newListString = JSON.stringify(listObj)
+      localStorage.setItem("item", newListString)
     }
   }
 }
