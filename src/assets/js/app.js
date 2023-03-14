@@ -36,10 +36,8 @@ form.onsubmit = event => {
     document.querySelectorAll(".item-list").forEach(item => {
       arr.push(item.textContent)
     })
-    console.log(1)
     localStorage.setItem("item", JSON.stringify(arr))
   } else {
-    console.log(2)
     localObj.push(value)
     const novaString = JSON.stringify(localObj)
     localStorage.setItem("item", novaString)
