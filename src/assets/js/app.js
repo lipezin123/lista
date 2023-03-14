@@ -5,6 +5,7 @@ const buttonClose = document.querySelector(".button-modal-close")
 const buttonSubmit = document.querySelector("#submit")
 const modal = document.querySelector("dialog")
 const textarea = document.querySelector("textarea")
+const arr = []
 
 form.onsubmit = event => {
   event.preventDefault()
@@ -28,14 +29,21 @@ form.onsubmit = event => {
   li.appendChild(button)
   ul.appendChild(li)
 
-  const arr = new Array()
+  const local = localStorage.getItem("item")
+  const localObj = JSON.parse(local)
 
-  const ItemValue = document.querySelectorAll(".item-list").forEach(item => {
-    arr.push(item.textContent)
-  })
-
-  localStorage.setItem("item", JSON.stringify(arr))
-
+  if (!localObj) {
+    document.querySelectorAll(".item-list").forEach(item => {
+      arr.push(item.textContent)
+    })
+    console.log(1)
+    localStorage.setItem("item", JSON.stringify(arr))
+  } else {
+    console.log(2)
+    localObj.push(value)
+    const novaString = JSON.stringify(localObj)
+    localStorage.setItem("item", novaString)
+  }
   input.value = ""
 }
 
@@ -77,8 +85,8 @@ function Submit() {
 
 function getList() {
   const listString = localStorage.getItem("item")
+  const listObj = JSON.parse(listString)
   if (listString) {
-    const listObj = JSON.parse(listString)
     let listHTML = ""
     for (var i = 0; i < listObj.length; i++) {
       listHTML += `<li><span>${listObj[i]}</span><button class="delete">X</button></li>`
