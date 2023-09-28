@@ -92,7 +92,7 @@ ul {
 }
 
 ul li {
-  height: 40px;
+  height: fit-content;
   border-style: none;
   color: #fff;
   padding: 8px 16px;
