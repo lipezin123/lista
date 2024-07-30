@@ -4,7 +4,8 @@
 ![preview](./.github/preview1.png)
 ![preview](./.github/preview2.png)
 
-[🔗 Link do projeto](https://vespasianoo.github.io/to-do-app/)
+[🔗 Link do projeto](https://lipezin123
+.github.io/lista/)
 
 ### 🛠 Tecnologias
 
@@ -19,4 +20,4 @@
 
 ### 📩 Contato
 
-vespasianomatheus@gmail.com
+felipeprogramador24@gmail.com

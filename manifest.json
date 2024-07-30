@@ -1,6 +1,6 @@
 {
-  "short_name": "Don't forget To-do",
-  "name": "DF To-do",
+  "short_name": "Listas",
+  "name": "Listas",
   "start_url": ".",
   "version": "0.1",
   "display": "standalone",
@@ -8,7 +8,7 @@
   "theme-color": "#000000",
   "background_color": "#121214",
   "background-color": "#121214",
-  "description": "my site description",
+  "description": "Listas",
   "icons": [
     {
       "src": "src/assets/img/logo-100x100.png",
