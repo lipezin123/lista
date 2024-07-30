@@ -4,8 +4,7 @@
 ![preview](./.github/preview1.png)
 ![preview](./.github/preview2.png)
 
-[🔗 Link do projeto](https://lipezin123
-.github.io/lista/)
+[🔗 Link do projeto](https://lipezin123.github.io/lista/)
 
 ### 🛠 Tecnologias
 
